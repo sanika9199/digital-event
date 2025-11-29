@@ -1,3 +1,5 @@
+import profilePic from "../assets/profile.jpg";   // ✅ IMPORT YOUR IMAGE
+
 export default function Navbar() {
   return (
     <div style={styles.navbar}>
@@ -10,7 +12,6 @@ export default function Navbar() {
 
       {/* CENTER SEARCH BAR */}
       <div style={styles.searchContainer}>
-        {/* Small search icon inside input */}
         <svg
           style={styles.searchInsideIcon}
           xmlns="http://www.w3.org/2000/svg"
@@ -34,9 +35,9 @@ export default function Navbar() {
         />
       </div>
 
-      {/* RIGHT → PROFILE IMAGE ONLY */}
+      {/* RIGHT → PROFILE IMAGE */}
       <img
-        src="/profile.jpg"
+        src={profilePic}         // ✅ USING THE IMPORTED IMAGE
         alt="profile"
         style={styles.profileImg}
       />
@@ -62,7 +63,6 @@ const styles = {
     zIndex: 1000,
   },
 
-  /* LOGO */
   logoBox: {
     display: "flex",
     alignItems: "center",
@@ -79,7 +79,6 @@ const styles = {
     marginLeft: "3px",
   },
 
-  /* SEARCH BAR */
   searchContainer: {
     position: "relative",
     width: "350px",
@@ -104,7 +103,6 @@ const styles = {
     color: "#333",
   },
 
-  /* PROFILE IMAGE */
   profileImg: {
     width: "35px",
     height: "35px",
