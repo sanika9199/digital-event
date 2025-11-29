@@ -1,0 +1,77 @@
+/* PAGE CENTERING */
+.register-page {
+  margin-left: 250px;
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  background: #f0f5ff;
+}
+
+/* FORM CARD */
+.register-box {
+  width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reg-title {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+/* LABEL */
+.register-box label {
+  display: block;
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* INPUT & DROPDOWN */
+.register-box input,
+.register-box select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #d0d0d0;
+  font-size: 14px;
+  outline: none;
+  background: #fafafa;
+}
+
+.register-box input:focus,
+.register-box select:focus {
+  border-color: #1a73e8;
+  background: #fff;
+}
+
+/* BUTTON */
+.reg-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 22px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.reg-btn:hover {
+  background: #0f5edb;
+}

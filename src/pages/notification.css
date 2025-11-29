@@ -1,0 +1,61 @@
+/* MAIN PAGE */
+.notify-page {
+  margin-left: 240px;
+  margin-top: 80px;
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #eef5ff, #dce9ff);
+}
+
+.notify-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* NOTIFICATION LIST */
+.notify-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* NOTIFICATION CARD */
+.notify-card {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.notify-text {
+  font-size: 15px;
+  color: #333;
+  max-width: 75%;
+  line-height: 1.4;
+}
+
+/* RIGHT SIDE (time + badge) */
+.notify-right {
+  text-align: right;
+}
+
+.notify-time {
+  font-size: 13px;
+  color: #888;
+  display: block;
+}
+
+.notify-badge {
+  margin-top: 8px;
+  background: #ff4d4d;
+  color: white;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 600;
+}

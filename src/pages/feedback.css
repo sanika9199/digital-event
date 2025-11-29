@@ -1,0 +1,82 @@
+/* MAIN PAGE AREA */
+.feedback-page {
+  margin-left: 250px;
+  margin-top: 90px;
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e8f0ff, #d6e7ff);
+}
+
+/* PAGE TITLE */
+.feedback-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* FEEDBACK BOX */
+.feedback-box {
+  width: 450px;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: auto;
+}
+
+/* LABEL */
+.label-title {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+/* ⭐ STAR RATING ⭐ */
+.stars {
+  font-size: 30px;
+  margin: 8px 0 15px 0;
+}
+
+.star {
+  cursor: pointer;
+  color: #d1d1d1;
+  transition: 0.2s;
+}
+
+.star.active {
+  color: #1a73e8;
+}
+
+/* TEXTAREA */
+.feedback-input {
+  width: 100%;
+  height: 120px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  outline: none;
+  font-size: 14px;
+  resize: none;
+}
+
+.feedback-input:focus {
+  border-color: #1a73e8;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  background: #67aaf9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #4e96f0;
+}

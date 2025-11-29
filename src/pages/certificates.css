@@ -1,0 +1,73 @@
+/* MAIN PAGE */
+.cert-page {
+  margin-left: 240px;  /* Sidebar */
+  margin-top: 80px;    /* Navbar */
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #eef5ff, #dce9ff);
+}
+
+.cert-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* LIST WRAPPER */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* CARD */
+.cert-card {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* LEFT SIDE ICON + TEXT */
+.cert-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.cert-icon {
+  font-size: 28px;
+  color: #1f85ff;
+}
+
+/* COURSE NAME */
+.cert-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* DATE */
+.cert-date {
+  font-size: 14px;
+  color: #6d6d6d;
+  margin-top: 3px;
+}
+
+/* BLUE BUTTON */
+.cert-btn {
+  background: #1f85ff;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cert-btn:hover {
+  background: #0e71e6;
+}

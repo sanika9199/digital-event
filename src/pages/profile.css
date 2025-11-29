@@ -1,0 +1,132 @@
+/* MAIN AREA */
+.profile-page {
+  margin-left: 250px;
+  margin-top: 90px;
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e8f0ff, #dce8ff);
+}
+
+.profile-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* PROFILE CARD */
+.profile-card {
+  width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.profile-photo-section {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.status-dot {
+  width: 14px;
+  height: 14px;
+  background: #40c057;
+  border-radius: 50%;
+  position: absolute;
+  right: 2px;
+  bottom: 4px;
+  border: 3px solid white;
+}
+
+/* NAME + EDIT ICON ROW */
+.name-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* SMALL EDIT ICON */
+.edit-icon {
+  font-size: 18px;
+  cursor: pointer;
+  color: #1a73e8;
+}
+
+.edit-icon:hover {
+  opacity: 0.7;
+}
+
+/* INFO TEXT */
+.user-info {
+  margin-top: 4px;
+  color: #555;
+}
+
+/* EDIT FORM */
+.edit-section {
+  margin-top: 18px;
+  text-align: left;
+}
+
+.edit-section label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.edit-section input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* SAVE BUTTON */
+.save-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #155fcc;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #d93636;
+}

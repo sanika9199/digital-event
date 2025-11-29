@@ -1,0 +1,59 @@
+/* MAIN PAGE */
+.highlight-page {
+  margin-left: 240px;   /* sidebar space */
+  margin-top: 80px;     /* navbar space */
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f5f8ff, #e4edff);
+}
+
+/* PAGE TITLE */
+.highlight-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* GRID LAYOUT */
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD WRAPPER */
+.highlight-card {
+  position: relative;
+  height: 190px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE */
+.highlight-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CARD WITHOUT IMAGE */
+.empty-card {
+  width: 100%;
+  height: 100%;
+  background: #eef1f6;
+}
+
+/* TITLE OVERLAY */
+.highlight-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.55);
+  color: #ffffff;
+  backdrop-filter: blur(2px);
+}
