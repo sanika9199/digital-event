@@ -2,10 +2,34 @@ import { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/navbar";
 import "./profile.css";
-import profilePic from "../assets/profile.jpg";
 
 export default function Profile() {
-  const [isEditing, setIsEditing] = useState(false);
+
+  const [profile, setProfile] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    photo: ""
+  });
+
+  const handleChange = (e) => {
+    setProfile({...profile, [e.target.name]: e.target.value});
+  };
+
+  const handleUpload = (e) => {
+    const file = e.target.files[0];
+    if(file){
+      setProfile({...profile, photo: URL.createObjectURL(file)});
+    }
+  };
+
+  const handleRemove = () => {
+    setProfile({...profile, photo: ""});
+  };
+
+  const handleSave = () => {
+    alert("Profile Saved Successfully ✅");
+  };
 
   return (
     <>
@@ -14,50 +38,66 @@ export default function Profile() {
 
       <div className="profile-page">
 
-        <h1 className="profile-title">Profile</h1>
+        <h1 className="profile-title">My Profile</h1>
 
-        <div className="profile-card">
+        <div className="profile-container">
 
-          {/* PROFILE PHOTO */}
-          <div className="profile-photo-section">
-            <img src={profilePic} className="profile-photo" alt="Profile" />
-            <span className="status-dot"></span>
-          </div>
-
-          {/* NAME + SMALL EDIT ICON */}
-          <div className="name-row">
-            <h2 className="user-name">Sarah Miller</h2>
-
-            {/* SMALL EDIT ICON */}
-            <span 
-              className="edit-icon"
-              onClick={() => setIsEditing(!isEditing)}
-              title="Edit Profile"
-            >
-              ✏️
-            </span>
-          </div>
-
-          <p className="user-info">✉️ sarah.miller@university.edu</p>
-          <p className="user-info">📅 Events Attended: <strong>25</strong></p>
-
-          {/* EDIT FORM */}
-          {isEditing && (
-            <div className="edit-section">
-              <label>Name</label>
-              <input type="text" defaultValue="Sarah Miller" />
-
-              <label>Email</label>
-              <input type="email" defaultValue="sarah.miller@university.edu" />
-
-              <label>Phone Number</label>
-              <input type="text" placeholder="Enter phone number" />
-
-              <button className="save-btn">Save</button>
+          {/* LEFT PHOTO SECTION */}
+          <div className="photo-box">
+            
+            <div className="avatar-circle">
+              {profile.photo 
+                ? <img src={profile.photo} alt="Profile" />
+                : "U"}
             </div>
-          )}
 
-          <button className="logout-btn">Logout</button>
+            <label className="upload-btn">
+              Upload New Photo
+              <input type="file" hidden onChange={handleUpload} />
+            </label>
+
+            <button className="remove-btn" onClick={handleRemove}>
+              Remove
+            </button>
+
+          </div>
+
+
+          {/* RIGHT FORM SECTION */}
+          <div className="form-box">
+
+            <label>Name</label>
+            <input 
+              type="text" 
+              name="name"
+              placeholder="Your name"
+              value={profile.name}
+              onChange={handleChange}
+            />
+
+            <label>Email</label>
+            <input 
+              type="email" 
+              name="email"
+              placeholder="you@example.com"
+              value={profile.email}
+              onChange={handleChange}
+            />
+
+            <label>Phone</label>
+            <input 
+              type="text"
+              name="phone"
+              placeholder="+91 9876543210"
+              value={profile.phone}
+              onChange={handleChange}
+            />
+
+            <button className="save-profile-btn" onClick={handleSave}>
+              Save Profile Picture & Details
+            </button>
+
+          </div>
 
         </div>
       </div>

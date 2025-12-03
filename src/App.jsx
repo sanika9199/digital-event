@@ -9,6 +9,7 @@ import Feedback from "./pages/Feedback";
 import Profile from "./pages/profile";
 import Register from "./pages/Register";   // ✅ added
 
+
 export default function App() {
   return (
     <BrowserRouter>
