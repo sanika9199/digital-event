@@ -1,5 +1,5 @@
 import Sidebar from "../components/Sidebar";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import "./certificates.css";
 
 export default function Certificates() {

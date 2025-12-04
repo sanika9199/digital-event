@@ -1,6 +1,6 @@
 import "./explore.css";
 import Sidebar from "../components/Sidebar";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -100,7 +100,7 @@ export default function Explore() {
   return (
     <>
       <Sidebar />
-      <Navbar />
+      <Navbar onSearch={setSearch} />
 
       <div className="explore-container">
         <h2 className="explore-title">Explore Events</h2>

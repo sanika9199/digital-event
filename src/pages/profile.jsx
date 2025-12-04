@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Sidebar from "../components/Sidebar";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import "./profile.css";
 
 export default function Profile() {
